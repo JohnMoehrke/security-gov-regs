@@ -19,6 +19,7 @@
       <li><a href="recipient-spec.html">Recipient</a></li>
     </ul>
   </li>
+  <li><a href="security.html">Security and Privacy Considerations</a></li>
   <li><a href="artifacts.html">Artifact Index</a></li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support<b class="caret">
@@ -33,4 +34,5 @@
       </li>
     </ul>
   </li>
+
 </ul>      

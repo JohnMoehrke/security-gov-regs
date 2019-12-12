@@ -17,5 +17,6 @@ When built the output can be viewed here http://build.fhir.org/ig/JohnMoehrke/se
 1. I have created one valueSet holding all the codes given by Kathleen. These have not been discussed by the committee, but seem reasonable to get started
 1. I have created one example of a Bundle. It is from the IHE-MHD IG, with addition of ALL of the codes in our valueset. 
 1. This is saved on JohnMoehrke GitHub. This will move to HL7 GitHub after the FMG approval of the IG Proposal.
+1. Need someone to writing up the background on the three regulations. It should not be exhaustive, but it should be sufficient to express the need and include links to appropriate reading material.
 
 

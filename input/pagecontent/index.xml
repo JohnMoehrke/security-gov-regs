@@ -32,6 +32,9 @@
       <a href="recipient-spec.html">Recipient Specification</a> - The requirements for Recipient actor.
     </li>
     <li>
+      <a href="security.html">Security and Privacy Considerations</a> - The considerations for Privacy and Security.
+    </li>
+    <li>
       <a href="downloads.html">Downloads</a> - Allows downloading a copy of this implementation guide and other useful information
     </li>
   </ul>

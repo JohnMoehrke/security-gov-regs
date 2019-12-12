@@ -1,0 +1,11 @@
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas-r5/fhir-single.xsd">
+  
+  <!-- no need for header
+<a name="Security"> </a>
+  <h3>Security and Privacy Considerations</h3>
+  -->
+  <p>
+  This IG covers data and bundle <a href="http://hl7.org/fhir/security-labels.html">Security Labels</a>tagging. This is not sufficient to assure <a href="http://hl7.org/fhir/secpriv-module.html">Security and Privacy</a>. The data in scope for this IG are <a href="http://hl7.org/fhir/security.html#Patient">Patient Sensitive</a>. This IG must be used in combination with a <a href="http://hl7.org/fhir/security.html#http">Privacy and Security framework</a> that assures organization, system, and communication management of Security and Privacy risks. This is inclusive but not excluded to <a href="http://hl7.org/fhir/security.html#http">Communications</a>, <a href="http://hl7.org/fhir/security.html#authentication">Authentication</a>, <a href="http://hl7.org/fhir/security.html#binding">Authorization</a>, <a href="http://hl7.org/fhir/secpriv-module.html#privacy-consent">Privacy Consent</a>, <a href="http://hl7.org/fhir/security.html#audit">Audit Logging</a>, <a href="secpriv-module.html#provenance">Provenance</a>, etc.
+</p>
+ 
+</div>

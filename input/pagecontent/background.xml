@@ -9,24 +9,20 @@
   There are two abstract actors defined. These two abstract actors have functional and non-functional behaviours, and communicate following the transaction constraints defined within this IG.
   </p>
   <ul>
-  <li><b>Sender</b> - The abstract actor that is sending personally identifiable data</li>
-  <li><b>Recipient</b> - The abstract actor that is receiving personally identifiable data</li>
+  <li><b><a href="sender-spec.html">Sender</a></b> - The abstract actor that is sending personally identifiable data</li>
+  <li><b><a href="recipient-spec.html">Recipient</a></b> - The abstract actor that is receiving personally identifiable data</li>
   </ul>
   <p>
   For any given exchange of personally identifiable data (often refered to here as data) where that data are ruled by a USA Government Regulation identified in this IG, the relationship between Sender and Recipient is assigned based on the flow of data, from the Sender to the Recipient. In the case of a FHIR-Document the Sender is otherwise known as the creator of the document, where the Recipient is otherwise known as the consumer of that document. In the case of REST (Query/Response), the Sender is responding to queries sent from the Recipient. In the case of Transactions the use of Sender and Recipient will depend on the flow of data. There are some cases where the abstract actors of Sender and Recipient are applied both sides of a network communication, such as a Transaction where signficant data flows in the first communication, and the response to the Transaction also carries data. Thus the Transaction request is from a Sender to a Recipient, and the Transaction response is also from a Sender to a Recipient. In this way the the Sender and Recipient are abstract actors that for any communication of data are aligned with the sending and receiving of that data.</p>
+  <p>The details of the <a href="spec.html">specification</a>, <a href="sender-spec.html">Sender</a>, and <a href="recipient-spec.html">Recipient</a>.</p>
 
 <a name="conformance-declaration"> </a>
-  <h2>Conformance declaration</h2>
+  <h3>Conformance declaration</h3>
   <p>This IG defines a given profile for security that can be used in server CapabilityStatement to advertize that the server is compliant with this IG. This leverages the FHIR capability discovery mechanism, and fills a gap identified previously. The confirmation of this declaration must be backed by a trust framework to assure that the CapabilityStatement received is trustable and backed by organizatinoal committments.</p>
 
 <a name="ONC"> </a>
-  <h2>Certification of Health IT</h2>
+  <h3>Certification of Health IT</h3>
   <p>This IG is a specialization of the Data Segmentation for Privacy. This IG is focused on communication using HL7 FHIR. This IG is more prescriptive around the specific regulations given. This IG is consistent with the goals and intention of the <a href="https://www.healthit.gov/topic/certification-ehrs/certification-health-it">Certification of Health IT</a>, specifically <a href="https://www.healthit.gov/test-method/data-segmentation-privacy-send">§170.315(b)(7) Data segmentation for privacy – send</a> and <a href="https://www.healthit.gov/test-method/data-segmentation-privacy-receive">§170.315(b)(8) Data segmentation for privacy – receive</a>.</p>
-  
-<a name="Security"> </a>
-  <h2>Security and Privacy Considerations</h2>
-  <p>
-  This IG covers data and bundle <a href="http://hl7.org/fhir/security-labels.html">Security Labels</a>tagging. This is not sufficient to assure <a href="http://hl7.org/fhir/secpriv-module.html">Security and Privacy</a>. The data in scope for this IG are <a href="http://hl7.org/fhir/security.html#Patient">Patient Sensitive</a>. This IG must be used in combination with a <a href="http://hl7.org/fhir/security.html#http">Privacy and Security framework</a> that assures organization, system, and communication management of Security and Privacy risks. This is inclusive but not excluded to <a href="http://hl7.org/fhir/security.html#http">Communications</a>, <a href="http://hl7.org/fhir/security.html#authentication">Authentication</a>, <a href="http://hl7.org/fhir/security.html#binding">Authorization</a>, <a href="http://hl7.org/fhir/secpriv-module.html#privacy-consent">Privacy Consent</a>, <a href="http://hl7.org/fhir/security.html#audit">Audit Logging</a>, <a href="secpriv-module.html#provenance">Provenance</a>, etc.
-</p>
+ 
  
 </div>
