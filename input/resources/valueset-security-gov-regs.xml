@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <url value="http://hl7.org/fhir/us/security-gov-regs/ValueSet/security-labels"/>
+  <name value="All Security Labels for US Government Regulations"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2019-12-11"/>
+  <publisher value="FHIR Security project team"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.org/fhir"/>
+    </telecom>
+  </contact>
+  <description value="A subset of HCS codes to support USA Government Regulations."/>
+  <!--
+CUI:
+Confidentiality = R; 
+Policy = CFR32Part 2002 (need new code); 
+Obligations = CUIMark/CPLYCUI/ENCRYPT/PERSISTLABEL/PRIVMARK.
+
+42CFRPart2:
+Confidentiality=R; 
+Policy=42CFRPART2CD; 
+Sensitivity=SUD; 
+Obligations = T/P/O/COC/R 
+options; 
+   Obligations = MINEC & ENCRYPT & CPLYCD & PERSISTLABEL & PRIVMARK; 
+Refrain = NORDSCLCD.
+   
+Title 38 Section 7332:
+Confidentiality=R; 
+Policy=Title38Section7332; 
+Sensitivity = SUD/HIV/SCA 
+    options; POU T/P/O/R options; 
+Obligations = MINEC & ENCRYPT & CPLYJPP& PERSISTLABEL & PRIVMARK; 
+Refrain = NOREUSE;   
+  -->
+  <compose>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-Confidentiality"/>
+	  <concept>
+		<code value="N"/>
+	  </concept>
+	  <concept>
+		<code value="R"/>
+	  </concept>
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+	  <!-- need new code
+	  <concept>
+		<code value="CFR32Part2002" />
+	  </concept>
+	  -->
+	  <concept>
+		<code value="42CFRPart2" />
+	  </concept>
+	  <concept>
+		<code value="Title38Section7332" />
+	  </concept>
+	  <!-- sensitivity codes -->
+	  <concept>
+		<code value="SUD" />
+	  </concept>
+	  <concept>
+		<code value="SCA" />
+	  </concept>
+	  <concept>
+		<code value="HIV" />
+	  </concept>
+	  <!-- obligations -->
+<!-- not found obligations
+	  <concept>
+		<code value="CUIMark" />
+	  </concept>
+	  <concept>
+		<code value="CPLYCUI" />
+	  </concept>
+	  -->
+	  <concept>
+		<code value="ENCRYPT" />
+	  </concept>
+	  <concept>
+		<code value="PERSISTLABEL" />
+	  </concept>
+	  <concept>
+		<code value="PRIVMARK" />
+	  </concept>
+	  <concept>
+		<code value="MINEC" />
+	  </concept>
+  	  <concept>
+		<code value="CPLYCD" />
+	  </concept>
+<!-- obligations -->
+  	  <concept>
+		<code value="NOREUSE" />
+	  </concept>
+  	  <concept>
+		<code value="NORDSCLCD" />
+	  </concept>
+    </include>
+<!-- PurposeOfUse -->
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+	  <concept>
+		<code value="TREAT"/>
+	  </concept>
+	  <concept>
+		<code value="HPAYMT"/>
+	  </concept>
+	  <concept>
+		<code value="HOPERAT"/>
+	  </concept>
+    </include>
+  </compose>
+</ValueSet>

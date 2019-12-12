@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Start by finding all references to "myig" and updating to appropriate text for your IG, including changing realm -->
+<ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas-r5/fhir-single.xsd">
+  <id value="fhir.us.security-gov-regs"/>
+  <url value="http://hl7.org/fhir/us/security-gov-regs/ImplementationGuide/fhir.us.security-gov-regs"/>
+  <name value="Security-Gov-Regs"/>
+  <title value="Security for US Government Regulations"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <publisher value="HL7 International - Security Work Group"/>
+  <contact>
+    <telecom>
+      <!-- Or whatever URL and/or email address(es) are appropriate -->
+      <system value="other"/>
+      <value value="http://hl7.org/Special/committees/security"/>
+    </telecom>
+  </contact>
+  <description value="To address the goals of the 21st Century Cures Act, participants in US healthcare exchange will be required to share sensitive information in accordance with governing privacy policies. Requirements to meet these laws are addressed in the latest version of the Trusted Exchange Framework and Common Agreement proposal. This project focuses on two national privacy laws governing sensitive information, 42 CFR Part 2 and Title 38 Section 7332; and the needs of 32 CFR Part 2002 CUI. This IG intends to show how to achieve standards based consensus on security labels for each policy to ensure interoperability and Share with Protections Trust Contracts ."/>
+  <jurisdiction>
+    <!-- This will drive SNOMED release used -->
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="840"/>
+    </coding>
+  </jurisdiction>
+  <packageId value="fhir.us.security-gov-regs"/>
+  <!-- This is whatever FHIR version the IG artifacts are targeting (not the version of this file, which should always be 'current release') -->
+  <fhirVersion value="4.0.1"/>
+  <definition>
+    <!-- You don't need to define any groupings.  The IGPublisher will define them for you.  You only need to do so if your IG is 'special' and it's
+      inappropriate to use the defaults.  Feel free to provide feedback about the defaults... -->
+    <!--    <resource>
+      <reference>
+        <reference value="StructureDefinition/structuredefinition-somePatientProfile"/>
+      </reference>
+      <name value="Name you want in artifact list"/>
+      <description value="Description you want in artifact list"/>
+    </resource>-->
+    <page>
+      <!-- The root will always be toc.html - the template will force it if you don't do it -->
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <nameUrl value="index.html"/>
+        <title value="MyIG Home Page"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="background.html"/>
+        <title value="Background"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="spec.html"/>
+        <title value="Detailed Specification"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="downloads.html"/>
+        <title value="Useful Downloads"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="changes.html"/>
+        <title value="IG Change History"/>
+        <generation value="html"/>
+      </page>
+    </page>
+  </definition>
+</ImplementationGuide>
