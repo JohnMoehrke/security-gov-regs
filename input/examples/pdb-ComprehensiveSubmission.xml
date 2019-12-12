@@ -2,7 +2,7 @@
     <id value="pdb-ComprehensiveSubmission"/>
     <meta>
         <lastUpdated value="2013-07-01T13:11:33Z"/>
-        <profile value="http://hl7.org/fhir/us/security-gov-regs/StructureDefinition/security-gov-regs-bundle"/>
+        <profile value="http://hl7.org/fhir/us/security-gov-regs/StructureDefinition/security-gov-regs-bundle"/> 
         <security>
             <system value="http://hl7.org/fhir/v3/ActReason"/>
             <code value="HTEST"/>
@@ -10,7 +10,7 @@
         </security>
 		<!-- Note ALL codes are in this test data to prove they all can be used -->
 		<security>
-			<system value="http://terminology.hl7.org/CodeSystem/v3-Confidentiality: />
+			<system value="http://terminology.hl7.org/CodeSystem/v3-Confidentiality" />
 			<code value="R" />
 		</security>
 		<security>
