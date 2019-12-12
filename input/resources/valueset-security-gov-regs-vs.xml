@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 
 <ValueSet xmlns="http://hl7.org/fhir">
-  <url value="http://hl7.org/fhir/us/security-gov-regs/ValueSet/security-labels"/>
+  <id value="security-gov-regs-vs" />
+  <url value="http://hl7.org/fhir/us/security-gov-regs/ValueSet/security-gov-regs-vs"/>
   <name value="All Security Labels for US Government Regulations"/>
+  <title value="All Security Labels for US Government Regulations"/>
   <status value="draft"/>
   <experimental value="true"/>
   <date value="2019-12-11"/>

@@ -29,13 +29,35 @@
   <definition>
     <!-- You don't need to define any groupings.  The IGPublisher will define them for you.  You only need to do so if your IG is 'special' and it's
       inappropriate to use the defaults.  Feel free to provide feedback about the defaults... -->
-    <!--    <resource>
+    <resource>
       <reference>
-        <reference value="StructureDefinition/structuredefinition-somePatientProfile"/>
+        <reference value="StructureDefinition/security-gov-regs-bundle"/>
       </reference>
-      <name value="Name you want in artifact list"/>
-      <description value="Description you want in artifact list"/>
-    </resource>-->
+      <name value="Bundle constraints"/>
+      <description value="Profile of ANY/ALL Bundle that is compliant with this IG"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/security-gov-regs-vs"/>
+      </reference>
+      <name value="ValueSet of Security-Label Vocabulary"/>
+      <description value="The set of Security-Label vocabulary that must be supported."/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Patient/example"/>
+      </reference>
+      <name value="Example of Patient"/>
+      <description value="a typical Patient identifier used in examples"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/pdb-ComprehensiveSubmission"/>
+      </reference>
+      <name value="Example of a Transaction Bundle"/>
+      <description value="a Transaction Bundle carrying Personally Identifiable Data that is covered by ALL of the security-label vocabulary"/>
+	  <exampleCanonical value="http://hl7.org/fhir/us/security-gov-regs/StructureDefinition/security-gov-regs-bundle" />
+    </resource>
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->
       <nameUrl value="toc.html"/>
@@ -43,13 +65,23 @@
       <generation value="html"/>
       <page>
         <nameUrl value="index.html"/>
-        <title value="MyIG Home Page"/>
+        <title value="Security of USA Government Regulations Home Page"/>
         <generation value="html"/>
       </page>
       <page>
         <nameUrl value="background.html"/>
         <title value="Background"/>
         <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="sender-spec.html"/>
+        <title value="Sender Specification"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="recipient-spec.html"/>
+        <title value="Recipient Specification"/>
+        <generation value="markdown"/>
       </page>
       <page>
         <nameUrl value="spec.html"/>

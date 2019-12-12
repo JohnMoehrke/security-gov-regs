@@ -3,12 +3,15 @@
   <a name="intro"> </a>
   <h3>Introduction</h3>
 	<p>
-    US Government Regulations around extra sensitive or extra critical handling are used within to communicate these facts from a sender to a recipient
+    US Government Regulations around extra sensitive or extra critical handling are used within to communicate these facts from a Sender to a Recipient. 
+  </p>
+  <p>
+  This IG addresses the goals of the 21st Century Cures Act, participants in US healthcare exchange will be required to share sensitive information in accordance with governing privacy policies. Requirements to meet these laws are addressed in the latest version of the Trusted Exchange Framework and Common Agreement proposal. This project focuses on two national privacy laws governing sensitive information, 42 CFR Part 2 and Title 38 Section 7332; and the needs of 32 CFR Part 2002 CUI. This IG intends to show how to achieve standards based consensus on security labels for each policy to ensure interoperability and Share with Protections Trust Contracts.
   </p>
 	<a name="technical"> </a>
 	<h3>Technical Overview</h3>
-	<p>
-    TODO
+    <p>
+  For any given exchange of personally identifiable data (often refered to here as data) where that data are ruled by a USA Government Regulation identified in this IG, the relationship between Sender and Recipient is assigned based on the flow of data, from the Sender to the Recipient. In the case of a FHIR-Document the Sender is otherwise known as the creator of the document, where the Recipient is otherwise known as the consumer of that document. In the case of REST (Query/Response), the Sender is responding to queries sent from the Recipient. In the case of Transactions the use of Sender and Recipient will depend on the flow of data. There are some cases where the abstract actors of Sender and Recipient are applied both sides of a network communication, such as a Transaction where signficant data flows in the first communication, and the response to the Transaction also carries data. Thus the Transaction request is from a Sender to a Recipient, and the Transaction response is also from a Sender to a Recipient. In this way the the Sender and Recipient are abstract actors that for any communication of data are aligned with the sending and receiving of that data.
   </p>
   <a name="walkthrough"> </a>
   <p>
@@ -20,7 +23,13 @@
       familiar with before reading the remainder of the IG.  There could be multiple pages for this.
     </li>
     <li>
-      <a href="spec.html">Detailed Specification</a> - The actual stuff implementers are expected to do.  (Could be multiple pages for this.)
+      <a href="spec.html">Detailed Specification</a> - The overall requirements. 
+    </li>
+    <li>
+      <a href="sender-spec.html">Sender Specification</a> - The requirements for Sender actor. 
+    </li>
+    <li>
+      <a href="recipient-spec.html">Recipient Specification</a> - The requirements for Recipient actor.
     </li>
     <li>
       <a href="downloads.html">Downloads</a> - Allows downloading a copy of this implementation guide and other useful information

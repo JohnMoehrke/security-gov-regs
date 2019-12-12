@@ -16,5 +16,6 @@ When built the output can be viewed here http://build.fhir.org/ig/JohnMoehrke/se
 1. I have profiled only Bundle. I did not find a way to profile ANY DomainResource. However I don't think that is not needed
 1. I have created one valueSet holding all the codes given by Kathleen. These have not been discussed by the committee, but seem reasonable to get started
 1. I have created one example of a Bundle. It is from the IHE-MHD IG, with addition of ALL of the codes in our valueset. 
-1. There is no narrative written: Introduction, Actors, Interactions, Requirements for Sender, Requirements for Recipient, etc?
 1. This is saved on JohnMoehrke GitHub. This will move to HL7 GitHub after the FMG approval of the IG Proposal.
+
+

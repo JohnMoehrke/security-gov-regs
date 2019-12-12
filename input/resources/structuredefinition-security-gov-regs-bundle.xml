@@ -31,7 +31,7 @@ Must have .meta.security tags coming from ONLY the valueSet defined.
 			<path value="Bundle.meta.security" />
 			<binding>
 				<strength value="required" />
-				<valueSet value="http://hl7.org/fhir/us/security-gov-regs/ValueSet/security-labels" />
+				<valueSet value="http://hl7.org/fhir/us/security-gov-regs/ValueSet/security-gov-regs-vs" />
 			</binding>
 			<min value="1" />
 		</element>
