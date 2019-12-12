@@ -1,0 +1,86 @@
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+      "concept" : [{
+        "code" : "N"
+      },
+      {
+        "code" : "R"
+      }]
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "concept" : [{
+        "code" : "42CFRPart2"
+      },
+      {
+        "code" : "Title38Section7332"
+      },
+      {
+        "code" : "SUD"
+      },
+      {
+        "code" : "SCA"
+      },
+      {
+        "code" : "HIV"
+      },
+      {
+        "code" : "ENCRYPT"
+      },
+      {
+        "code" : "PERSISTLABEL"
+      },
+      {
+        "code" : "PRIVMARK"
+      },
+      {
+        "code" : "MINEC"
+      },
+      {
+        "code" : "CPLYCD"
+      },
+      {
+        "code" : "NORUSE"
+      },
+      {
+        "code" : "NORDSCLCD"
+      }]
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "concept" : [{
+        "code" : "TREAT"
+      },
+      {
+        "code" : "HPAYMT"
+      },
+      {
+        "code" : "HOPERAT"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "Error from server: Unable to find NORUSE in http://terminology.hl7.org/CodeSystem/v3-ActCode"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "text/plain"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "urn:ietf:bcp:13"
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
+v: {
+  "display" : "text/plain",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------

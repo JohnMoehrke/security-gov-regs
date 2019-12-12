@@ -3,11 +3,13 @@
     <meta>
         <lastUpdated value="2013-07-01T13:11:33Z"/>
         <profile value="http://hl7.org/fhir/us/security-gov-regs/StructureDefinition/security-gov-regs-bundle"/> 
+<!--
         <security>
             <system value="http://hl7.org/fhir/v3/ActReason"/>
             <code value="HTEST"/>
             <display value="test health data"/>
         </security>
+		-->
 		<!-- Note ALL codes are in this test data to prove they all can be used -->
 		<security>
 			<system value="http://terminology.hl7.org/CodeSystem/v3-Confidentiality" />
@@ -82,7 +84,7 @@
 			    <meta>
                     <profile value="http://ihe.net/fhir/StructureDefinition/IHE.MHD.Provide.Comprehensive.DocumentReference"/>
         <security>
-            <system value="http://hl7.org/fhir/v3/ActReason"/>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
             <code value="HTEST"/>
             <display value="test health data"/>
         </security>
@@ -91,6 +93,7 @@
                     <system value="urn:ietf:rfc:3986"/>
                     <value value="urn:oid:1.2.129.6.58.92.88336.4"/>
                 </masterIdentifier>
+				<status value="current" />
                 <category>
                     <coding>
                         <system value="urn:oid:1.3.6.1.4.1.19376.1.2.6.1"/>
@@ -99,10 +102,9 @@
                     </coding>
                 </category>
                 <subject>
-                    <reference value="${patientResourceId}"/>
+                    <reference value="Patient/example"/>
                 </subject>
-                <created value="2005-12-24"/>
-                <indexed value="2013-07-01T23:11:33+10:00"/>
+                <date value="2005-12-24T23:50:50-05:00"/>
                 <securityLabel>
                     <coding>
                         <system value="http://terminology.hl7.org/CodeSystem/v3-Confidentiality"/>
@@ -130,7 +132,7 @@
  			    <meta>
                     <profile value="http://ihe.net/fhir/StructureDefinition/IHE.MHD.Comprehensive.DocumentManifest"/>
         <security>
-            <system value="http://hl7.org/fhir/v3/ActReason"/>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
             <code value="HTEST"/>
             <display value="test health data"/>
         </security>
@@ -146,6 +148,7 @@
                     <system value="urn:ietf:rfc:3986"/>
                     <value value="urn:oid:1.2.129.6.58.92.88337.4"/>
                 </masterIdentifier>
+				<status value="current" />
                 <type>
                     <coding>
                         <system value="http://snomed.info/sct"/>
@@ -154,7 +157,7 @@
                     </coding>
                 </type>
                 <subject>
-                    <reference value="${patientResourceId}"/>
+                    <reference value="Patient/example"/>
                 </subject>
                 <created value="2004-12-25T23:50:50-05:00"/>
                 <source value="urn:oid:1.3.6.1.4.1.21367.2009.1.2.1"/>
@@ -176,7 +179,7 @@
                 <meta>
                     <lastUpdated value="2013-07-01T13:11:33Z"/>
         <security>
-            <system value="http://hl7.org/fhir/v3/ActReason"/>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
             <code value="HTEST"/>
             <display value="test health data"/>
         </security>
